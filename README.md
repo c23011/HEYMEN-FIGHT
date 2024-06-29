@@ -1,17 +1,20 @@
 # HEYMEN FIGHT
+※現在未完成のため制作継続中
 
 ## ファイル構成
 
-- [Unityデータ](https://github.com/c23011/OnePlate/tree/master/ProjectData/OnePlate)
-- [ビルドデータ](https://drive.google.com/drive/u/0/folders/14BAHcyWSsg7v7vOC-DXeMgp7jM3YsLpN)
+- [Unityデータ](https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData)
+- [ビルドデータ](https://drive.google.com/drive/u/0/folders/1eepyErMKEtw2zq1cIRrcxtFZPwSxQcCu)
 
 ## ゲームジャンル
-2D2人対戦ゲーム
+2D対戦ゲーム
 
 ## 担当プログラムファイル
-- [食材を掴んで動かす](https://github.com/c23011/OnePlate/blob/master/ProjectData/OnePlate/Assets/Scripts/GripItemScript.cs)
-- [肉調理時の内部値の変更](https://github.com/c23011/OnePlate/blob/master/ProjectData/OnePlate/Assets/Scripts/NormalScoreScript.cs)
-- [盛り付け時の採点](https://github.com/c23011/OnePlate/blob/master/ProjectData/OnePlate/Assets/Scripts/ScoreCheckScript.cs)
+- [プレイヤーの移動や攻撃](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerMove.cs)
+- [HPの表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/HpBarScript.cs)
+- [攻撃のクールタイム表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/AttackBarScript.cs)
+- [各キャラクターの生成･管理](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerInstantiateScript.cs)
+- [各特殊攻撃の機能](https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts/Bullet)
 
 
 ## ゲームルール
@@ -21,11 +24,11 @@
 
 
 ## 操作方法
-###キャラクター選択画面
+### キャラクター選択画面
 L1･R1ボタンでキャラクター、特殊攻撃の種類を変更
 〇ボタンで決定
 
-###対戦画面
+### 対戦画面
 Lスティック/移動
 Rスティック右/特殊攻撃の射出方向時計回り
 Rスティック左/特殊攻撃の射出方向反時計回り
@@ -37,7 +40,7 @@ L1/ガード
 Unity 2022.3.7f1
 
 ## 製作期間
-3ヶ月
+2ヶ月
 
 ## メンバー（役割）
 - 島袋陽光（プログラマ）
@@ -45,9 +48,6 @@ Unity 2022.3.7f1
 - 新納功大（デザイナー）
 
 ## ゲームスクリーンショット
-![HEYMENFIGHT_Title](https://github.com/c23011/OnePlate/blob/master/ScreenShot/OnePlate_Title.png)
-![HEYMENFIGHT_FightSceneSample](https://github.com/c23011/OnePlate/blob/master/ScreenShot/ScreenShot_morituke.png)
-
-
-ProjectData/OnePlate/Assetフォルダ内に下記リンク先にあるデータのダウンロードをお願いします。
-[GoogleDrive_OnePlate](https://drive.google.com/drive/u/0/folders/1qPDAlfafXY4wgQ7mIiYrk41L8oNZme0l)
+![HEYMENFIGHT_Title](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ScreenShot/HEYMENFIGHT_Title.png)
+![HEYMENFIGHT_CharacterSelect](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ScreenShot/HEYMENFIGHT_CharaSelect.png)
+![HEYMENFIGHT_FightSceneImage](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ScreenShot/HEYMENFIGHT_FightImage.png)
