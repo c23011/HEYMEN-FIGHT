@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletRotScript : MonoBehaviour
 {
+    //Normal意外のBulletのRotationをどの向きに撃っても正しい向きにさせる
+
     public GameObject bulletObj;
     public Quaternion bulletRot;
     public float bulletRotZ;
@@ -14,6 +16,8 @@ public class BulletRotScript : MonoBehaviour
 
     void Update()
     {
+        //各テクスチャの親オブジェクトのRotationが(0,0,0,0)以外になった場合に発動
+        //親オブジェクトのQuaternion値と逆の値にすることで元の向きに
         bulletRot = bulletObj.transform.rotation;
 
         if (bulletRot.x != 0.0f)

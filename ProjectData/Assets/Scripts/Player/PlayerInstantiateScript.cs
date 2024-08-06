@@ -20,7 +20,6 @@ public class PlayerInstantiateScript : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
-    [Header("入力禁止")]
     public float MaxHp1P;
     public float MaxHp2P;
     public float NowHp1P;
@@ -68,7 +67,6 @@ public class PlayerInstantiateScript : MonoBehaviour
 
             MaxShotCDtime1P = playerMoveScript1P.shotScript.bulletShotCDTime;
             MaxShotCDtime2P = playerMoveScript2P.shotScript.bulletShotCDTime;
-
         }
 
         if (swapSW == true)
@@ -77,27 +75,26 @@ public class PlayerInstantiateScript : MonoBehaviour
         }
     }
 
+    //Select画面で選択したキャラと特殊攻撃の読み取り
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "CharacterSel")
         {
             CharaSelecter = other.gameObject;
             charaSelScript = other.GetComponent<CharacterSelectScript>();
-            //Debug.Log(CharaSelecter);
 
             instSW = true;
             HpController.SetActive(true);
         }
     }
 
-
+    //1PのPlayer生成とパラメータ割り当て
     public void Player1()
     {
         chara1 = charaSelScript.SelectedCharacter1;
         int gun1 = charaSelScript.SelectedGunType1;
         
         player1 = Instantiate(Character[chara1],new Vector3(-6.0f,0.75f,0.0f),Quaternion.identity);
-        //Debug.Log(player1);
         playerMoveScript1P = player1.GetComponent<PlayerMove>();
         playerMoveScript1P.PlayerID = playerID1P;
         playerMoveScript1P.characterCustom = chara1;
@@ -105,12 +102,13 @@ public class PlayerInstantiateScript : MonoBehaviour
         MaxHp1P = playerMoveScript1P.playerHP;
     }
 
+    //2PのPlayer生成とパラメータ割り当て
     public void Player2()
     {
         chara2 = charaSelScript.SelectedCharacter2;
         int gun2 = charaSelScript.SelectedGunType2;
-        player2 = Instantiate(Character[chara2], new Vector3(6.0f, 0.75f, 0.0f), Quaternion.identity);
-        //Debug.Log(player2);
+
+        player2 = Instantiate(Character[chara2],new Vector3(6.0f,0.75f,0.0f),Quaternion.identity);
         playerMoveScript2P = player2.GetComponent<PlayerMove>();
         playerMoveScript2P.PlayerID = playerID2P;
         playerMoveScript2P.characterCustom = chara2;
@@ -118,6 +116,7 @@ public class PlayerInstantiateScript : MonoBehaviour
         MaxHp2P = playerMoveScript2P.playerHP;
     }
 
+    //1Pと2Pがすれ違った際に向きを反転させる
     void CharacterSwap()
     {
         player1pX = player1.transform.position.x;

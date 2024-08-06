@@ -109,7 +109,6 @@ public class CharacterSelectScript : MonoBehaviour
                 SelectedCharacter1 = NowCharacter1P;
                 CharacterSelectSW1 = false;
                 GunType1P[0].SetActive(true);
-                //Debug.Log(SelectedCharacter1);
 
                 Invoke("GunSelectSWtrue1", 0.1f);
             }
@@ -146,7 +145,6 @@ public class CharacterSelectScript : MonoBehaviour
             {
                 SelectedGunType1 = NowGunType1P;
                 GunSelectSW1 = false;
-                //Debug.Log(SelectedGunType1);
 
                 goSW1 = true;
             }
@@ -194,7 +192,6 @@ public class CharacterSelectScript : MonoBehaviour
                 SelectedCharacter2 = NowCharacter2P;
                 CharacterSelectSW2 = false;
                 GunType2P[0].SetActive(true);
-                //Debug.Log(SelectedCharacter2);
 
                 Invoke("GunSelectSWtrue2", 0.1f);
             }
@@ -231,7 +228,6 @@ public class CharacterSelectScript : MonoBehaviour
             {
                 SelectedGunType2 = NowGunType2P;
                 GunSelectSW2 = false;
-                //Debug.Log(SelectedGunType2);
 
                 goSW2 = true;
             }

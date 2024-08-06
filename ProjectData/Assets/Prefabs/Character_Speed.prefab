@@ -129,13 +129,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5291818679196300667}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.18129157, w: 0.9834294}
   m_LocalPosition: {x: 2.06, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4779736601447700546}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.89}
 --- !u!70 &1182587125318022562
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,8 +168,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.369465, y: -0.01915689}
-  m_Size: {x: 2.1512675, y: 1.3236908}
+  m_Offset: {x: -0.17, y: 0.01}
+  m_Size: {x: 2.6468844, y: 2.6468844}
   m_Direction: 1
 --- !u!114 &830456708729273842
 MonoBehaviour:
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 1
-  myPlayer: {fileID: 0}
+  myPlayer: {fileID: 7350658278568240968}
   enemyPlayer: {fileID: 0}
 --- !u!212 &4383545213680444140
 SpriteRenderer:
@@ -224,10 +224,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 09315723bbf028246aa81dfe8e974c90, type: 3}
+  m_SortingLayerID: -952653031
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 466e88617162d324fab5d45e3bc16ef0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -321,7 +321,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8398635968484781798}
@@ -399,9 +399,12 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 123705924514965755}
   shotScript: {fileID: 3282706221180195383}
+  PlayerTexture:
+  - {fileID: 21300000, guid: 3d61aa4236a024744a9d61bc814725c5, type: 3}
+  - {fileID: 21300000, guid: b42b5abf9235ff34e8122f120be52447, type: 3}
   NormalAttack: {fileID: 5291818679196300667}
   attackEndTime: 0.3
-  attackCoolDownTime: 1
+  attackCoolDownTime: 0.7
   nowAttackCDTime: 0
   AttackSW: 0
   AttackCdCountSW: 0

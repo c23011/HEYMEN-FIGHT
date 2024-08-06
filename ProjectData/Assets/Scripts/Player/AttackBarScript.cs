@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class AttackBarScript : MonoBehaviour
 {
+    //Attackのクールタイムは各Attackオブジェクトから
+    //PlayerMoveに読み込ませ、そのPlayerMoveを
+    //PlayerInsterが読み込ませるようにしている
+    //Shotも同様
     public Slider attackBar1P;
     public Slider attackBar2P;
 
@@ -60,8 +64,6 @@ public class AttackBarScript : MonoBehaviour
         attackBar1P.maxValue = maxAttackCDTime1P;
         attackBar2P.maxValue = maxAttackCDTime2P;
 
-        //Debug.Log(playerInstScript.playerMoveScript1P.AttackCdCountSW);
-
         if (playerInstScript.playerMoveScript1P.AttackCdCountSW == true && atCountSW1P == false)
         {
             atCountSW1P = true;
@@ -111,8 +113,6 @@ public class AttackBarScript : MonoBehaviour
         maxShotCDTime2P = playerInstScript.MaxShotCDtime2P;
         shotBar1P.maxValue = maxShotCDTime1P;
         shotBar2P.maxValue = maxShotCDTime2P;
-
-        //Debug.Log(playerInstScript.playerMoveScript1P.AttackCdCountSW);
 
         if (playerInstScript.playerMoveScript1P.ShotCdCountSW == false && stCountSW1P == false)
         {

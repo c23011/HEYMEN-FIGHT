@@ -19,6 +19,8 @@ public class PlayerMove : MonoBehaviour
     public Collider2D playerCol;
     [Header("プレイヤーについているAimオブジェクト")]
     public BulletShotScript shotScript;
+    [Header("プレイヤーのテクスチャ")]
+    public Sprite[] PlayerTexture;
 
     float playerx;
     float playery;
@@ -110,7 +112,9 @@ public class PlayerMove : MonoBehaviour
 
             if (LeftStickHoli != 0.0f || LeftStickVert != 0.0f)
             {
-                this.transform.position = new Vector3(playerx + (LeftStickHoli * playerSpeed), playery + (LeftStickVert * -playerSpeed), this.transform.position.z);
+                this.transform.position = new Vector3(playerx + (LeftStickHoli * playerSpeed),
+                                                      playery + (LeftStickVert * -playerSpeed),
+                                                      this.transform.position.z);
             }
         }
     }
@@ -126,6 +130,7 @@ public class PlayerMove : MonoBehaviour
                     moveSW = false;
                     NormalAttack.SetActive(true);
                     AttackCdCountSW = true;
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = PlayerTexture[1];
                     Invoke("AttackEnd", attackEndTime);
                     Invoke("AttackSWtrue",attackCoolDownTime);
                     AttackSW = false;
@@ -180,6 +185,7 @@ public class PlayerMove : MonoBehaviour
                     moveSW = false;
                     NormalAttack.SetActive(true);
                     AttackCdCountSW = true;
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = PlayerTexture[1];
                     Invoke("AttackEnd", attackEndTime);
                     Invoke("AttackSWtrue", attackCoolDownTime);
                     AttackSW = false;
@@ -191,6 +197,7 @@ public class PlayerMove : MonoBehaviour
     void AttackEnd()
     {
         NormalAttack.SetActive(false);
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = PlayerTexture[0];
         moveSW = true;
     }
 
@@ -212,14 +219,12 @@ public class PlayerMove : MonoBehaviour
         {
             moveSW = false;
             GuardSW = true;
-            Debug.Log("1Pガード中！");
         }
 
         if (Input.GetButtonUp("L1Button1P"))
         {
             moveSW = true;
             GuardSW = false;
-            Debug.Log("1Pガード解除！");
         }
     }
 
@@ -229,14 +234,12 @@ public class PlayerMove : MonoBehaviour
         {
             moveSW = false;
             GuardSW = true;
-            Debug.Log("2Pガード中！");
         }
 
         if (Input.GetButtonUp("L1Button2P"))
         {
             moveSW = true;
             GuardSW = false;
-            Debug.Log("2Pガード解除！");
         }
     }
 }

@@ -314,15 +314,15 @@ MonoBehaviour:
   - {fileID: 1137765986779712131}
   - {fileID: 7405548107548021017}
   SelectedCharacter1: 1
-  SelectedCharacter2: 2
+  SelectedCharacter2: 0
   SelectedGunType1: 3
   SelectedGunType2: 0
   CharacterSelectSW1: 0
   CharacterSelectSW2: 0
   GunSelectSW1: 0
   GunSelectSW2: 0
-  goSW1: 0
-  goSW2: 0
+  goSW1: 1
+  goSW2: 1
 --- !u!4 &880276901
 Transform:
   m_ObjectHideFlags: 0
@@ -1661,6 +1661,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 1616038744341921080}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 890117661142592957}
   attackEndTime: 0.5
   attackCoolDownTime: 0
@@ -2136,6 +2137,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 495648792975182533}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 4473811130506217962}
   attackEndTime: 0.6
   attackCoolDownTime: 0
@@ -2432,6 +2434,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 53509330182914931}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 1912092043434841078}
   attackEndTime: 0.5
   attackCoolDownTime: 0
@@ -4365,6 +4368,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 4670380560705751233}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 8657686594777615342}
   attackEndTime: 0.6
   attackCoolDownTime: 0
@@ -4481,6 +4485,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 801899943446638769}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 4295628278422677976}
   attackEndTime: 0.1
   attackCoolDownTime: 0
@@ -5383,6 +5388,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 1353829355351803488}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 6489379539593681888}
   attackEndTime: 0.3
   attackCoolDownTime: 0
@@ -5557,6 +5563,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 2605843083941771193}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 1482837585423937232}
   attackEndTime: 0.1
   attackCoolDownTime: 0
@@ -5605,6 +5612,7 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 2151723145243850568}
   shotScript: {fileID: 0}
+  PlayerTexture: []
   NormalAttack: {fileID: 6132592229055212232}
   attackEndTime: 0.3
   attackCoolDownTime: 0

@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7621999694475134873}
@@ -108,9 +108,12 @@ MonoBehaviour:
   gunTypeCustom: 0
   playerCol: {fileID: 229372318157858178}
   shotScript: {fileID: 8378885098858731913}
+  PlayerTexture:
+  - {fileID: 21300000, guid: f6c383a6d498bdc44adb603de47e2b52, type: 3}
+  - {fileID: 21300000, guid: 90467c773b801914fbfc7eafb8c37b95, type: 3}
   NormalAttack: {fileID: 4312243501799270061}
   attackEndTime: 0.6
-  attackCoolDownTime: 3
+  attackCoolDownTime: 1.8
   nowAttackCDTime: 0
   AttackSW: 0
   AttackCdCountSW: 0
@@ -207,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 4312243501799270061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.85, y: 0, z: 0}
+  m_LocalPosition: {x: 2.99, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -245,7 +248,7 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.27824467, y: 0.00000017881393}
+  m_Offset: {x: 0.12, y: 0.00000017881393}
   m_Size: {x: 1.4748787, y: 1.8600155}
   m_Direction: 0
 --- !u!114 &2933722371243022643
@@ -304,7 +307,7 @@ SpriteRenderer:
   m_SortingLayerID: -952653031
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 09315723bbf028246aa81dfe8e974c90, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12a993f4e1eb8864e9505d7dce05eb27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

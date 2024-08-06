@@ -59,6 +59,6 @@ public class ControllerTest : MonoBehaviour
             degree += 360;
         }
 
-        //Debug.Log(degree);
+        Debug.Log(degree);
     }
 }
