@@ -10,8 +10,7 @@
 
 ## 担当プログラム
 全てのプログラム作成を担当。
-- [Scriptsフォルダ]
-(https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts)
+- [Scriptsフォルダ](https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts)
 
 ### 一部抜粋プログラムファイル
 - [プレイヤーの移動や攻撃](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerMove.cs)
