@@ -12,7 +12,7 @@
 全てのプログラム作成を担当。
 - [Scriptsフォルダ](https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts)
 
-### 一部抜粋プログラムファイル
+実装に苦労したプログラムファイル
 - [プレイヤーの移動や攻撃](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerMove.cs)
 - [HPの表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/HpBarScript.cs)
 - [攻撃のクールタイム表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/AttackBarScript.cs)
