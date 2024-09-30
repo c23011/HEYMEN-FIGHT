@@ -1,5 +1,4 @@
 # HEYMEN FIGHT
-※現在未完成のため制作継続中
 
 ## ファイル構成
 
@@ -9,13 +8,17 @@
 ## ゲームジャンル
 2D対戦ゲーム
 
-## 担当プログラムファイル
+## 担当プログラム
+全てのプログラム作成を担当。
+- [Scriptsフォルダ]
+(https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts)
+
+### 一部抜粋プログラムファイル
 - [プレイヤーの移動や攻撃](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerMove.cs)
 - [HPの表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/HpBarScript.cs)
 - [攻撃のクールタイム表示](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/AttackBarScript.cs)
 - [各キャラクターの生成･管理](https://github.com/c23011/HEYMEN-FIGHT/blob/master/ProjectData/Assets/Scripts/Player/PlayerInstantiateScript.cs)
 - [各特殊攻撃の機能](https://github.com/c23011/HEYMEN-FIGHT/tree/master/ProjectData/Assets/Scripts/Bullet)
-
 
 ## ゲームルール
 操作はコントローラのみ(現在DUALSHOCK4でのみ操作可能)
